@@ -1,0 +1,17 @@
+
+__pycache__/
+*.pyc
+*.pyo
+
+.venv/
+venv/
+.env
+
+*.duckdb
+
+data/
+
+.vscode/
+.ipynb_checkpoints/
+
+.DS_Store
