@@ -1,35 +1,37 @@
-# JOINS. Caso de uso.
+# JOINS. Use case.
 
-## Escenario
-HR desea tener un reporte que combina empleados, departamentos, y salarios.
+## Scenario
+HR wants a report that combines employees, departments, and salaries.
 
-## Objetivo
-Optimizar y automatizar el reporte que HR realiza manualmente, mediante queries que combinan las tablas requeridas.
+## Objective
+Optimize and automate the report that HR currently generates manually by using queries that combine the necessary tables.
 
-## Solución
-El proyecto utiliza **DuckDB** como motor analitico embebido y **Python** para ejecutar queries SQL que:
+## Solution
+The project uses **DuckDB** as an embedded analytics engine and **Python** to execute SQL queries that:
 
-- Combinan empleados y departamentos (INNER / LEFT JOIN)
-- Detectan posibles problemas de integridad referencial
-- Relacionan empleados con sus managers (SELF JOIN)
-- Obtienen el salario más reciente por empleado (INNER JOIN, Window functions)
+- Join employees and departments (INNER / LEFT JOIN)
+- Detect potential referential integrity issues
+- Link employees to their managers (SELF JOIN)
+- Retrieve the most recent salary for each employee (INNER JOIN, window functions)
 
 ## Outputs
-El script crea automáticamente el directorio `output/` si no existe.
-Ademas, genera archivos en formato **CSV** y **Parquet** con los resultados.
+The script automatically creates the `output/` directory if it does not exist.
+It also generates files in **CSV** and **Parquet** formats containing the results.
 
-
-## Tecnologias
+## Technologies
 - Python
 - DuckDB
 - Pandas
 - PyArrow
 
-## Ejecucion
+## Execution
 
 ```bash
 pip install -r requirements.txt
 python main.py
 ```
 
+## Author
+
+Gaston Rodriguez
 
